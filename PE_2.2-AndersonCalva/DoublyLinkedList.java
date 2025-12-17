@@ -1,6 +1,6 @@
 public class DoublyLinkedList {
-    private DLL_Node head;
-    private DLL_Node tail;
+    public DLL_Node head;
+    public DLL_Node tail;
 
     // inicializar mi lista doble
 

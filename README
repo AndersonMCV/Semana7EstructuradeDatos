@@ -1,0 +1,26 @@
+Análisis de cobertura:
+
+Operaciones cubiertas al 100%:
+isEmpty()
+InsertAtEnd
+reverse
+deleteByValue (todos los caminos excepto el bug mencionado)
+Verificación de punteros prev/next, head y tail
+
+Casos borde cubiertos:
+Todos los 8 identificados en Parte 1 están probados con al menos un caso dedicado.
+
+
+Gaps identificados:
+
+No hay pruebas para inserción al inicio (InsertAtHead) si llegaras a implementarla.
+No hay pruebas de concurrencia o uso multihilo (no requerido para esta estructura simple).
+No se prueba comportamiento con valores duplicados (tu deleteByValue elimina solo la primera ocurrencia, lo cual es aceptable pero no está explícitamente probado).
+
+Propuestas de mejora para aumentar cobertura:
+
+Corregir el bug en deleteByValue para el caso tail (ver corrección arriba).
+Agregar casos de prueba con valores duplicados (ej. insertar dos veces el 20 y eliminar uno).
+Implementar y probar método insertAtBeginning o deleteAtPosition.
+Agregar un método size() o getCount() y probarlo.
+Usar una herramienta de cobertura real como JaCoCo para medir porcentaje de líneas y ramas ejecutadas (en entornos reales de desarrollo).
